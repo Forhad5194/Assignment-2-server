@@ -6,6 +6,7 @@ const variantSchema = new Schema<TVariants>({
     value: String
 })
 
+
 const inventorySchema = new Schema<TInventory>({
   quantity: Number,
   inStock: Boolean,
@@ -25,10 +26,7 @@ const eommersSchema = new Schema<TEommerce>({
         type: Number,
         required: [true, "Price must be provided"]
     },
-    tags: {
-        type: String,
-        required: [true, "Tags must be provided"]
-    },
+    tags: { type: [String], required: true },
     variants: [variantSchema],
     inventory : inventorySchema,
 

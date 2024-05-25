@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "./dist/server.js",
   "scripts": {
-    "start:prod" : "node ./dist/server.js",
+    "start:prod": "node ./dist/server.js",
     "lint": "npx eslint .",
-    "lint:fix" : "npx eslint src --fix",
+    "lint:fix": "npx eslint src --fix",
     "start:dev": "tsnd --respawn ./src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
